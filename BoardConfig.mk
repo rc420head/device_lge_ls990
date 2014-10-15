@@ -19,6 +19,11 @@
 
 TARGET_OTA_ASSERT_DEVICE := g3,ls990
 
+# Bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_g3.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+BOARD_HAVE_BLUETOOTH_BCM := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_ls990_defconfig
 
